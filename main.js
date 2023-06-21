@@ -46,4 +46,3 @@ const secondArticle = posts.children[1];
 
 posts.replaceChildren(secondArticle, firstArticle, stopPlanning);
 headerNavUl[0].remove();
-console.log(document.querySelector('header'));
