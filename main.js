@@ -37,3 +37,7 @@ headerLink.remove();
 const featuredPost = document.querySelector('.featured');
 const readTimeSpan = featuredPost.querySelector('span');
 readTimeSpan.parentElement.removeChild(readTimeSpan);
+
+// Removed the LAST post from the page, titled "Stopped Planning"
+const lastPost = document.querySelector('section.posts article:last-of-type');
+lastPost.remove();
