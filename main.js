@@ -20,6 +20,13 @@ newArticle.innerHTML = `
   </aside>
 `;
 
-// ⬇️⬇️⬇️ 
-const postSection = document.querySelector('section.posts');
+// ⬇️⬇️⬇️ Added the new article to 🔚 end of the setion.posts element
+const postsSection = document.querySelector('section.posts');
 postsSection.appendChild(newArticle);
+
+// // Move 🔀 the 🥇1st article to the come the 🥈2nd article and vice versa 😵
+const firstArticle = postsSection.querySelector('article');
+const secondArticle = postsSection.querySelector('article:nth-of-type(2)');
+postsSection.insertBefore(firstArticle, secondArticle.nextSibling);
+
+// Remove ✂ the "All Posts link form the header"
