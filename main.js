@@ -19,3 +19,7 @@ newArticle.innerHTML = `
     </p>
   </aside>
 `;
+
+// ⬇️⬇️⬇️ 
+const postSection = document.querySelector('section.posts');
+postsSection.appendChild(newArticle);
