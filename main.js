@@ -2,6 +2,8 @@ const section = document.querySelector('main').firstElementChild;
 
 const posts = document.querySelector('.posts');
 
+const headerNavUl = document.querySelectorAll('header nav ul li');
+
 const stopPlanning = document.createElement('article');
 const img = document.createElement('img');
 const h3 = document.createElement('h3');
@@ -9,6 +11,7 @@ const aside = document.createElement('aside');
 const a = document.createElement('a');
 const span = document.createElement('span');
 const strong = document.createElement('strong');
+const li = document.createElement('li');
 
 img.setAttribute('src', './images/paul-gilmore-unsplash.jpg');
 img.setAttribute('alt', 'Image of a mountain in front of a lake.');
@@ -42,5 +45,5 @@ const firstArticle = posts.children[0];
 const secondArticle = posts.children[1];
 
 posts.replaceChildren(secondArticle, firstArticle, stopPlanning);
-
-console.log(posts);
+headerNavUl[0].remove();
+console.log(document.querySelector('header'));
