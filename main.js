@@ -1,7 +1,6 @@
 const section = document.querySelector('main').firstElementChild;
 
 const posts = document.querySelector('.posts');
-console.log(posts);
 
 const stopPlanning = document.createElement('article');
 const img = document.createElement('img');
@@ -34,9 +33,14 @@ secondPara.append(span);
 secondPara.append(a);
 aside.append(secondPara);
 
-console.log(stopPlanning);
-
 posts.append(stopPlanning);
-console.log(posts);
 
 section.classList.add('featured');
+
+const firstArticle = posts.children[0];
+
+const secondArticle = posts.children[1];
+
+posts.replaceChildren(secondArticle, firstArticle, stopPlanning);
+
+console.log(posts);
