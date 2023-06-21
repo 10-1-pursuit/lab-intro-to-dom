@@ -32,3 +32,8 @@ postsSection.insertBefore(firstArticle, secondArticle.nextSibling);
 // Remove ✂ the "All Posts" link form the header
 const headerLink = document.querySelector('header nav a');
 headerLink.remove();
+
+// Removed the span element containing the "Read Time" in the featured post
+const featuredPost = document.querySelector('.featured');
+const readTimeSpan = featuredPost.querySelector('span');
+readTimeSpan.parentElement.removeChild(readTimeSpan);
