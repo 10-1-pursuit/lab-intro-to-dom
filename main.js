@@ -41,3 +41,7 @@ readTimeSpan.parentElement.removeChild(readTimeSpan);
 // Removed the LAST post from the page, titled "Stopped Planning"
 const lastPost = document.querySelector('section.posts article:last-of-type');
 lastPost.remove();
+
+// Remove all the titles from the all non-featured posts
+const nonFeaturedPosts = document.querySelectorAll('section.posts article:not(featured) h3 ');
+nonFeaturedPosts.forEach(post => post.remove());
