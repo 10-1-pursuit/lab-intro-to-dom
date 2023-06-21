@@ -29,4 +29,6 @@ const firstArticle = postsSection.querySelector('article');
 const secondArticle = postsSection.querySelector('article:nth-of-type(2)');
 postsSection.insertBefore(firstArticle, secondArticle.nextSibling);
 
-// Remove ✂ the "All Posts link form the header"
+// Remove ✂ the "All Posts" link form the header
+const headerLink = document.querySelector('header nav a');
+headerLink.remove();
