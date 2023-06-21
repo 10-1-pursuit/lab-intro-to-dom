@@ -108,3 +108,7 @@ footer {
   padding: 25px;
   text-align: right;
 }
+.featured {
+  font-weight:bolder;
+  background-color: #ffd23f;
+}
