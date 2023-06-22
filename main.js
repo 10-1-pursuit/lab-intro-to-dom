@@ -31,5 +31,21 @@ aside.innerHTML = "<p> <span><strong>Read Time:</strong> 4 Minutes </span><a hre
 
 document.querySelector(".thirdArticle").append(aside);
 
-document.querySelectorAll(".posts").article[1]
+const secs = document.querySelectorAll("section")[1].querySelectorAll("article")
+
+let firstArticle = secs[0].setAttribute("class","firstArticle")
+
+let secondArticle = secs[1].setAttribute("class", "secondArticle")
+
+// let posts = document.getElementsByClassName("posts")
+
+document.querySelector("a").remove();
+
+document.querySelector("span").remove();
+
+
+
+
+
+
 
