@@ -43,8 +43,13 @@ document.querySelector("a").remove();
 
 document.querySelector("span").remove();
 
+document.querySelector(".thirdArticle").remove()
 
+let collection = document.querySelectorAll("h3");
 
+for(const items of collection){
+    items.remove()
+}
 
 
 
