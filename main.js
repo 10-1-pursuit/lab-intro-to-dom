@@ -33,11 +33,13 @@ document.querySelector(".thirdArticle").append(aside);
 
 const secs = document.querySelectorAll("section")[1].querySelectorAll("article")
 
-let firstArticle = secs[0].setAttribute("class","firstArticle")
+const first = secs[0]
 
-let secondArticle = secs[1].setAttribute("class", "secondArticle")
+const second = secs[1]
 
-// let posts = document.getElementsByClassName("posts")
+first.replaceWith(second)
+
+document.querySelector(".posts").append(first)
 
 document.querySelector("a").remove();
 
