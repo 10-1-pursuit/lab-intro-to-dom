@@ -69,6 +69,6 @@ document.querySelectorAll("a")[0].remove();
 document.querySelector("span").remove();
 
 //Remove all titles
-
+document.querySelectorAll("h1", "h2", "h3").remove()
 
 
