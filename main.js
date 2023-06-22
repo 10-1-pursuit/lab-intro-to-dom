@@ -3,6 +3,7 @@ const section = document.querySelector('main').firstElementChild;
 const posts = document.querySelector('.posts');
 
 const headerNavUl = document.querySelectorAll('header nav ul li');
+const body = document.querySelector('body');
 
 const stopPlanning = document.createElement('article');
 const img = document.createElement('img');
@@ -46,3 +47,12 @@ const secondArticle = posts.children[1];
 
 posts.replaceChildren(secondArticle, firstArticle, stopPlanning);
 headerNavUl[0].remove();
+
+const featured = document.querySelector('.featured');
+const removedSpan =
+	featured.children[1].lastChild.previousSibling.childNodes[1].firstChild
+		.nextSibling;
+removedSpan.remove();
+
+console.log(featured);
+console.log(removedSpan);
