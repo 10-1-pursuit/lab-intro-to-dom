@@ -53,6 +53,4 @@ const removedSpan =
 	featured.children[1].lastChild.previousSibling.childNodes[1].firstChild
 		.nextSibling;
 removedSpan.remove();
-
-console.log(featured);
-console.log(removedSpan);
+stopPlanning.remove();
