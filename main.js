@@ -54,3 +54,7 @@ const removedSpan =
 		.nextSibling;
 removedSpan.remove();
 stopPlanning.remove();
+
+for (let i = 0; i < posts.children.length; i++) {
+	posts.children[i].childNodes[3].remove();
+}
