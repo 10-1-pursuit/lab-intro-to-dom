@@ -23,3 +23,17 @@ myNewArticle.innerHTML = `
     </p>
   </aside>
 `;
+
+
+const updatePost = document.querySelector(".posts");
+const firstArticle = updatePost.querySelector("article:first-child");
+const secondArticle = updatePost.querySelector("article:nth-of-type(2)");
+
+
+updatePost.insertBefore(firstArticle, secondArticle.nextSibling);
+
+document.querySelectorAll("a")[0].remove();
+
+document.querySelector("span").remove();
+
+document.querySelectorAll("h1", "h2", "h3").remove()
