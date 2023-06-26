@@ -37,8 +37,7 @@ To complete this lab, you will need to create and update a number of elements us
   </p>
   <aside>
     <p>
-      <span><strong>Read Time:</strong> 4 Minutes</span
-      ><a href="#">Read more...</a>
+      <span><strong>Read Time:</strong> 4 Minutes</span><a href="#">Read more...</a>
     </p>
   </aside>
 </article>
