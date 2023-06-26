@@ -45,3 +45,6 @@ readTimeSpanParent.removeChild(readTimeSpan);
 const removeLastPost = document.querySelector("section.posts article:last-child");
 removeLastPost.remove();
 
+// - [✓] Remove all titles from all non-featured posts
+const nonFeaturedPosts = document.querySelectorAll("section.posts article:not(.featured)");
+nonFeaturedPosts.forEach(post => post.querySelector("h3").remove());
