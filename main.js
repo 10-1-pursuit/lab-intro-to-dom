@@ -41,3 +41,7 @@ const readTimeSpan = featuredPost.querySelector("span");
 const readTimeSpanParent = readTimeSpan.parentElement;
 readTimeSpanParent.removeChild(readTimeSpan);
 
+// - [✓] Remove the last post from the page, titled "Stop Planning"
+const removeLastPost = document.querySelector("section.posts article:last-child");
+removeLastPost.remove();
+
