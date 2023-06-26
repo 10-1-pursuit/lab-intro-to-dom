@@ -32,7 +32,12 @@ const articles = document.getElementsByTagName("article")
 articles[2].parentNode.insertBefore(articles[1],articles[3])
 
 // - [✓] Remove the "All Posts" link from the header
-const allPostsLink = document.querySelector('header nav a');
+const allPostsLink = document.querySelector("header nav a");
 allPostsLink.remove();
 
+// - [✓] Remove the `span` element that contains the "Read Time" in the featured post. The featured post is the first post on the page
+const featuredPost = document.querySelector(".featured");
+const readTimeSpan = featuredPost.querySelector("span");
+const readTimeSpanParent = readTimeSpan.parentElement;
+readTimeSpanParent.removeChild(readTimeSpan);
 
