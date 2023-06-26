@@ -115,31 +115,9 @@ document.body.children[1].children[1].children[2].children[1].remove()
 
 document.body.children[1].children[1].children[2].remove()
 
+document.body.children[1].children[1].children[1].parentNode.insertBefore(document.body.children[1].children[1].children[1],document.body.children[1].children[1].children[0])
 
 
-////divinationnnnnnnnnnnnnnnnnn
 
-// asideAdd.innerText="Read Time"
-
-// asideAdd.outerText="4 Minutes"
-
-// console.log(asideAdd)
-
-// asideAdd.addEventListener("mouseover",(event)=>{
-
-//     console.log(event.target.innerText,event.target.outerText)
-// })
-// adder.append(asideAdd)
-
-// const aAdder= document.createElement("a.")
-
-// aAdder.innerText='href ="#"'
-// aAdder.outerText="Read more..."
-
-// console.log(aAdder)
-// aAdder.addEventListener("mouseover",(event)=>{
-//     console.log(event.target.innerText,event.target.outerText)
-// })
-// adder.append(aAdder)
 
 
