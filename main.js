@@ -26,3 +26,7 @@ newArticle.innerHTML = `
 
 const postsSection = document.querySelector("section.posts");
 postsSection.appendChild(newArticle);
+
+// - [✓] Move the first article from inside the `section.posts` element to become the second article and move the second article so that it is the first article.
+const articles = document.getElementsByTagName("article")
+articles[2].parentNode.insertBefore(articles[1],articles[3])
