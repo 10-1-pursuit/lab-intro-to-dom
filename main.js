@@ -1,5 +1,15 @@
 const adder=document.querySelector("section.posts")
+const articleAdd= document.createElement("article")
+
+
+
+articleAdd.addEventListener("mouseover",(event)=>{
+
+})
+
+ adder.append(articleAdd)
 const sectionAdd= document.createElement("img")
+const addPic=document.querySelectorAll("article")[3]
 
 
 sectionAdd.src="./images/paul-gilmore-unsplash.jpg"
@@ -12,9 +22,10 @@ sectionAdd.addEventListener("mouseover",(event)=>{
    
 
 })
-adder.append(sectionAdd)
+addPic.append(sectionAdd)
 
 const headingAdd=document.createElement("h3")
+// const addTag=document.querySelector("")
 
 headingAdd.innerText= "Stop Planning"
 
@@ -25,8 +36,9 @@ console.log(headingAdd)
 headingAdd.addEventListener("mouseover",(event)=>{
     console.log(event.target.innerText)
 })
+addPic.append(headingAdd)
 
-adder.appendChild(headingAdd)
+
 
 
 const pAdd=document.createElement("p")
@@ -39,31 +51,95 @@ console.log(pAdd)
 pAdd.addEventListener("mouseover",(event)=>{
     console.log(event.target.innerText)
 })
-adder.appendChild(pAdd)
+addPic.appendChild(pAdd)
 
-const asideAdd=document.createElement("p.")
+ const asideAdd=document.createElement("aside")
 
-asideAdd.innerText="Read Time"
+ asideAdd.addEventListener("mouseover",(event)=>{
+    asideAdd.class= "pEl"
 
-asideAdd.outerText="4 Minutes"
+    console.log(event.target)
+ })
 
-console.log(asideAdd)
+ addPic.append(asideAdd)
 
-asideAdd.addEventListener("mouseover",(event)=>{
+//  const asideAdder=document.querySelectorAll("article")[3]("aside")[3]
 
-    console.log(event.target.innerText,event.target.outerText)
+ const nestedP= document.createElement("p")
+
+ nestedP.addEventListener("mouseover",(event)=>{
+
+    console.log(event.target)
+ })
+addPic.append(nestedP)
+
+const createSpan= document.createElement('span')
+
+createSpan.addEventListener("mouseover",(event)=>{
+    console.log(event.target)
 })
-adder.append(asideAdd)
 
-const aAdder= document.createElement("a.")
+addPic.appendChild(createSpan)
+const createStrong= document.createElement('strong')
+createStrong.innerText="Read Time:"
+// createStrong.outerText="4 Minutes"
 
-aAdder.innerText='href ="#"'
-aAdder.outerText="Read more..."
-
-console.log(aAdder)
-aAdder.addEventListener("mouseover",(event)=>{
-    console.log(event.target.innerText,event.target.outerText)
+createStrong.addEventListener("mouseover",(event)=>{
+    console.log(event.target)
 })
-adder.append(aAdder)
+
+addPic.append(createStrong)
+
+
+const createAEl= document.createElement('a')
+createAEl.innerText='4 minutes'
+// createAEl.outerText="Read more..."
+
+createAEl.addEventListener("mouseover",(event)=>{
+    console.log(event.target)
+})
+
+addPic.append(createAEl)
+
+// let order = document.querySelector
+const remover= document.querySelector("header li")[1]
+
+document.body.children[0].children[1].children[0].children[0].remove()
+
+
+document.body.children[1].children[0].children[1].children[2].children[0].remove()
+
+document.body.children[1].children[1].children[0].children[1].remove()
+document.body.children[1].children[1].children[1].children[1].remove()
+document.body.children[1].children[1].children[2].children[1].remove()
+
+document.body.children[1].children[1].children[2].remove()
+
+
+
+////divinationnnnnnnnnnnnnnnnnn
+
+// asideAdd.innerText="Read Time"
+
+// asideAdd.outerText="4 Minutes"
+
+// console.log(asideAdd)
+
+// asideAdd.addEventListener("mouseover",(event)=>{
+
+//     console.log(event.target.innerText,event.target.outerText)
+// })
+// adder.append(asideAdd)
+
+// const aAdder= document.createElement("a.")
+
+// aAdder.innerText='href ="#"'
+// aAdder.outerText="Read more..."
+
+// console.log(aAdder)
+// aAdder.addEventListener("mouseover",(event)=>{
+//     console.log(event.target.innerText,event.target.outerText)
+// })
+// adder.append(aAdder)
 
 
