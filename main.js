@@ -16,5 +16,5 @@ const hThreeForNewArticleElementWithClass = hThreeForNewArticleElement.classList
 const firstArticle = document.querySelector("article")
 const articleOne = firstArticle.classList.add("articleone")
 
-const secondArticle = document.querySelector("article")
-const articleTwo = secondArticle.classList.add("articletwo")
+    const secondArticle = document.querySelector("article")
+    const articleTwo = secondArticle.classList.add("articletwo")
